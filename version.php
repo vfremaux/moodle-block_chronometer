@@ -15,21 +15,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details.
+ * Version details
  *
- * @package     block_chronometer
- * @category    blocks
- * @author      Valery Fremaux <valery.fremaux@gmail.com>
- * @copyright   2012 Valery Fremaux (http://www.mylearningfactory.com)
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    block_calendar_upcoming
+ * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2015061400;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2015111000;        // Requires this Moodle version.
-$plugin->release = '3.0.0 (Build 2015061400)';
-$plugin->component = 'block_chronometer'; // Full name of the plugin (used for diagnostics).
+$plugin->version   = 2015061400;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->requires  = 2016051900;        // Requires this Moodle version
+$plugin->release = '3.1.0 (Build 2015061400)';
+$plugin->component = 'block_chronometer'; // Full name of the plugin (used for diagnostics)
 
 // Non moodle attributes.
-$plugin->codeincrement = '3.0.0001';
+$plugin->codeincrement = '3.1.0000';
