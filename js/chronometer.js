@@ -1,14 +1,12 @@
 var dd = 0;
 var ss = 0;
-var s = {$this->time->seconds};
-var m = {$this->time->minutes};
-var h = {$this->time->hours};
-var j = {$this->time->days};
 var chrono;
 var started = 0;
 
 function startChronometer() {
-    if (started) return;
+    if (started) {
+        return;
+    }
     runChronometer();
 }
 
@@ -33,9 +31,9 @@ function runChronometer() {
         st = s;
     }
 
-    chronoId = document.getElementById(\"chronoDisplay\");
-    chronoId.innerHTML = j + ' $daytag ' + ht + ':' + mt + ':' + st + ' / ' + dd;
-    chronoIdSec = document.getElementById('chronoDisplaySec');
+    chronoId = document.getElementById('chrono-display');
+    chronoId.innerHTML = j+' '+daytag+' '+ht+':'+mt+':'+st+' / ' + dd;
+    chronoIdSec = document.getElementById('chrono-display-sec');
     chronoIdSec.innerHTML = ss + ' / ' + dd + ' sec';
     dd++;
 
@@ -61,21 +59,26 @@ function runChronometer() {
 }
 
 function stopChronometer(){
-    if (!started) return;
+    if (!started) {
+        return;
+    }
     window.clearTimeout(chrono);
     started = 0;
 }
 
 function resetChronometer(){
-    if (started) return;
+    if (started) {
+        return;
+    }
     s = 0;
     m = 0;
     j = 0;
     h = 0;
-    ss = 0; 
+    ss = 0;
     dd = 0;
+
     chronoId = document.getElementById('chrono-display');
-    chronoId.innerHTML = \"0 $daytag 00:00:00 / 0\" ; 
+    chronoId.innerHTML = "0 "+daytag+" 00:00:00 / 0";
     chronoIdSec = document.getElementById('chrono-display-sec');
     chronoIdSec.innerHTML = '00 / 0 sec';
 }
