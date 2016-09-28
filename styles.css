@@ -1,0 +1,34 @@
+.chronometer{
+    font-family : "DotMatrix", monospace;
+}
+
+.font-size-little{
+}
+
+.font-size-medium{
+}
+
+.font-size-little{
+    font-size:1.0em;
+}
+
+.font-size-medium{
+    font-size:1.5em;
+}
+
+.font-size-big{
+    font-size:2.0em;
+}
+
+@font-face {
+    font-family: 'DSDIGI';
+    src: url('fonts/DSDIGI.eot');
+    src: local('DSDIGI'), url('fonts/DSDIGI.woff') format('woff'), url('fonts/DSDIGI.ttf') format('truetype');
+}
+
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1091">Text with this font applied</p> */
+.fontsforweb_fontid_1091 {
+    font-family: 'DSDIGI' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

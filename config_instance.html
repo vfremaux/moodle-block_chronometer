@@ -1,0 +1,38 @@
+<table cellpadding="9" cellspacing="0">
+<tr valign="top">
+    <td align="right">
+        <b><?php print_string('allowstudentcontrol', 'block_chronometer'); ?>:</b>
+    </td>
+    <td>
+        <?php
+            if (!isset($this->config->allowstudentcontrol)) $this->config->allowstudentcontrol = true;
+        	$checked = ($this->config->allowstudentcontrol) ? "checked=\"checked\"" : '' ;
+        ?>
+        <input type="checkbox" name="allowstudentcontrol" value="1" <?php echo $checked ?> />
+    </td>
+    <td>
+        <?php print_string('configallowstudentcontrol', 'block_chronometer'); ?>
+    </td>
+</tr>
+<tr valign="top">
+    <td align="right">
+        <b><?php print_string('autorunincourse', 'block_chronometer'); ?>:</b>
+    </td>
+    <td>
+        <?php
+            if (!isset($this->config->autorunincourse)) $this->config->autorunincourse = true;
+        	$checked = ($this->config->autorunincourse) ? "checked=\"checked\"" : '' ;
+        ?>
+        <input type="checkbox" name="autorunincourse" value="1" <?php echo $checked ?> />
+    </td>
+    <td>
+        <?php print_string('configautorunincourse', 'block_chronometer'); ?>
+    </td>
+</tr>
+<tr>
+    <td colspan="3" align="center">
+	<input type="hidden" name="sesskey" value="<?php global $USER; echo $USER->sesskey;?>">
+        <input type="submit" value="<?php print_string('savechanges') ?>" />
+    </td>
+</tr>
+</table>
