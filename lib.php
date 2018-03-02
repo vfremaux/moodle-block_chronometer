@@ -14,9 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace block_chronometer\privacy;
-
+/**
+ * @copyright 2015 Valery Fremaux (valery.fremaux@gmail.com)
+ * @package block_chronometer
+ * @category blocks
+ */
 defined('MOODLE_INTERNAL') || die();
 
-class provider implements \core_privacy\metadata\null_provider {
+/**
+ * This function is not implemented in this plugin, but is needed to mark
+ * the vf documentation custom volume availability.
+ */
+function block_chronometer_supports_feature($feature) {
+    assert(1);
 }
