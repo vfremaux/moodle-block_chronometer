@@ -18,6 +18,9 @@ $string['chronometer:addinstance'] = 'Add an instance of the chronometer';
 $string['chronometer:myaddinstance'] = 'Add an instance of the chronometer to My page';
 $string['chronometer:hascontrol'] = 'Has control of the chronometer';
 
+// Privacy
+$string['privacy:metadata'] = 'The Chronometer block does not directly store any personal data about any user.';
+
 $string['pluginname'] = 'Chronometer';
 $string['blocknameforstudents'] = 'Chronometer';
 $string['stop'] = 'Stop!';

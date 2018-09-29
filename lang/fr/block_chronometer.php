@@ -14,9 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-$string['chronometer:addinstance'] = 'Peut ajouter un chronomètre';
-$string['chronometer:myaddinstance'] = 'Peut ajouter un chronomètre à la page personnalisée';
+$string['chronometer:addinstance'] = 'Ajouter un chronomètre';
+$string['chronometer:myaddinstance'] = 'Ajouter un chronomètre à la page personnalisée';
 $string['chronometer:hascontrol'] = 'A les commandes du chronomètre';
+
+// Privacy
+$string['privacy:metadata'] = 'Le bloc Chronomètre ne détient directement aucune donnée relative aux utilisateurs.';
 
 $string['pluginname'] = 'Chronomètre';
 $string['blocknameforstudents'] = 'Chronomètre';
