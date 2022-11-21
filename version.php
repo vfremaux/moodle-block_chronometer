@@ -25,9 +25,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->version   = 2015061400;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2018042700;        // Requires this Moodle version
-$plugin->release = '3.5.0 (Build 2015061400)';
+$plugin->requires  = 2020061500;        // Requires this Moodle version
+$plugin->release = '3.7.0 (Build 2015061400)';
 $plugin->component = 'block_chronometer'; // Full name of the plugin (used for diagnostics)
 
 // Non moodle attributes.
-$plugin->codeincrement = '3.5.0000';
+$plugin->codeincrement = '3.9.0000';
